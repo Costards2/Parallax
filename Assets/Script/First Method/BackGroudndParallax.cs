@@ -19,7 +19,7 @@ public class BackGroudndParallax : MonoBehaviour
         // How far we have moved in world space
         float dist = cam.transform.position.x * parallaxEffect;
         
-        // How far we have moved relative to the camera (Obs: The value of the "temp" is the same oposite value of the object's position like, 1 and -1  )
+        // How far the camera has moved relative to the image (Obs: The value of the "temp" is the same oposite value of the object's position like, 1 and -1  )
         float temp = cam.transform.position.x * (1 - parallaxEffect); // This also returns the value needed for the image to accompany the camare position 
 
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
